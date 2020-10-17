@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@font-face{
+    font-family: 'FonteLogo';
+    src: url(../_fonts/Audiowide-Regular.ttf);
+}
+p{
+    text-indent: 50px;
+    text-align: justify;
+    color: rgba(0,0,0,1);
+}
+body{
+    background-color: #dddddd;
+    color: rgba(0,0,0,1)/*o 'a' é o alfa*/;  
+    font-family: 'Titillium Web', sans-serif;
+    font-size:12pt;
+}
+
+/*FORMATAÇÃO DO CABEÇALHO*/
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    /*LOGOMARCA GOOGLE GLASS*/
+    background: url('../_imagens/glass-logo-peq.jpg') no-repeat 0px 100px;
+}
+header#cabecalho h1{
+    font-family: 'FonteLogo';
+    font-size: 40pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    margin-top: 0px;
+}
+ /*ÍCONES*/
+header#cabecalho img#icone{
+    left: 1000px;
+    position: relative;
+    top: -80px;
+}
+
+/*FORMATAÇÃO INTERFACE*/
+div#interface{
+    width: 1200px;
+    background-color: white;
+    margin: -20px auto 10px auto; /*C,D,B,E*/
+    box-shadow: 0px 0px 10px darkgray; /*Parametro que cria uma sombra em volta do obj*/
+    padding: 10px 10px 10px 10px
+}
+/*FORMATAÇÃO DE IMGS COM LEGENDA*/
+figure.fotolegenda{
+    position: relative;
+    border: 3px solid darkgray; /*Largura, tipo e cor*/
+    box-shadow: 1px 1px 3px black;
+}
+        figure.fotolegenda img{
+            width: 100%;
+            height: 100%;
+        }
+        figure.fotolegenda figcaption{
+            opacity: 0;
+            position: absolute;
+            top: 0px;
+            background-color: rgba(0,0,0,0.4);
+            width:100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            color: white;
+            transition: opacity 2s;
+        }
+        figure.fotolegenda:hover figcaption{/*faz com que a classe só apareca quando eu passar o mouse por cima*/
+            opacity: 1;
+        }
+
+/*FORMATAÇÃO DO MENU*/
+    nav#menu ul{
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute; 
+        top: -20px;
+        left: 850px;
+    }
+    nav#menu li{ /*PARAMETRO PARA CADA ITEM DA LISTA*/
+        display: inline-block;
+        background-color: #dddddd;
+        padding: 10px; /*Espaço dentro do objeto*/ 
+        margin: 2px; /*Espaço fora do objeto* aqui, 4pixel entre os botoes*/
+        transition: background-color 2s; /*Caso o navegador seja muito antigo, use o site prefixr.com para criar uma linha compatível*/
+    }
+/* "hover" é a transição com o mouse*/
+    nav#menu li:hover {
+        background-color: lightslategray;       
+    }
+
+    nav#menu li.transition:hover{
+        transition: 2s;
+    } 
+
+    nav#menu h1{
+        display: none; /*SERVE PARA IDENTIFICAÇÃO DOS NAVEGADORES*/
+    }
+
+    nav#menu a{ /*LINKS*/
+        color: black;
+        text-decoration:none;
+    }
+/*Transição com o mouse*/
+    nav#menu a:hover{
+        color: #ffffff;
+    }
+
+/*Formatação da SECTION "CORPO"*/
+section#corpo{
+    display: block;
+    width: 700px;
+    float: left;
+    border-right: 1px #606060 solid;
+    padding-right: 15px;
+}
+
+
+/*Cabeçalho do artigo*/
+    header#cabecalhoart h1{
+        font-family: "FonteLogo";
+        font-size: 24pt;
+        margin-top: -0px;
+        margin-bottom: -15px;
+        color: #606060;
+    }
+    header#cabecalhoart h2{
+        font-family: "Titillium Web", sans-serif;
+        font-size: 8pt;
+        margin-top:10px;
+        color: black;
+    }
+
+    header#cabecalhoart h3{
+        font-family: "Titillium Web", sans-serif;
+        font-size: 10pt;
+        margin-bottom: 5px;
+        padding-top: 0px;
+    }
+        .direita{
+            text-align: right;
+        }
+/*Formatação ARTICLE*/
+    h2.subtits{
+        font-family: "Titillium Web", sans-serif;
+        font-size: 15pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding: 0px 0px 0px 10px;
+        margin: 10px 0px 10px 0px;
+    }
+    /*Formatação da Tabela*/
+        table#tabelaspec{
+            border: 1px solid #606060;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto; /*CENTRALIZANDO A TABELA*/
+        }
+        table#tabelaspec caption{
+            font-family: 'Titillium Web', sans-serif; 
+            font-size: 14pt;
+            font-weight: bolder;
+            color: #606060
+        }
+            table#tabelaspec caption span{
+                display: block;
+                float: right;
+                color: black;
+                font-size: 8pt;
+                margin-top: 10px;
+        }
+        table#tabelaspec td{
+            border: 1px solid #606060;   
+            font-family: 'Titillium Web', sans-serif;  
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+        }
+
+            table#tabelaspec td.colunadir{
+                text-align:left;
+                background-color: darkgray;
+            }
+
+            table#tabelaspec td.colunaesq{
+                text-align: right;
+                font-weight: 400;
+                color: white;
+                padding-right: 3px;
+                background-color: #606060;
+
+            }
+
+            video#filme_notprin{
+                display: block;
+                position: relative;
+                left: 100px;
+                margin-bottom: 20px;
+            }
+    /*Formataçãp da SECTION "LATERAL"*/
+    aside#lateral{
+        display: block;
+        width: 450px;
+        float: right;
+        margin-top: 10px;
+        background-color: #dddddd;
+        padding: 10px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    }
+    aside#lateral h1{
+        font-family: "FonteLogo";
+        font-size: 20pt;
+        margin-top:0px;
+        color:#606060;
+    }
+
+    aside#lateral h2{
+        font-family: 'Titillium Web', sans-serif;
+        background-color: #606060;
+        color: white;
+        padding-left: 10px;
+        font-size: 14pt;
+    }
+    
+    video#filme_aside{
+        display: block;
+        position: relative;
+        left: 30px;
+
+    }
+
+/*FORMATAÇÃO DO RODAPÉ*/
+footer#rodape{
+    clear: both;
+    border-top: 1px #606060 solid;
+    height: 65px;
+}
+footer#rodape p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    text-align: center;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
