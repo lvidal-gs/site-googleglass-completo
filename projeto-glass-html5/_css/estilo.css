@@ -79,6 +79,7 @@ figure.fotolegenda{
         }
         figure.fotolegenda:hover figcaption{/*faz com que a classe só apareca quando eu passar o mouse por cima*/
             opacity: 1;
+            color: white;
         }
 
 /*FORMATAÇÃO DO MENU*/
