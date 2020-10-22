@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/form.css"/>
     <link rel="shortcut icon" href="_imagens/glass-oculos-preto-peq.png"/>
-    <script language="_javascript" src="_javascript/funcoes.js"></script>
-    
+
+    <script src="_javascript/funcoes.js"></script>
     <script>
         function calc_total(){
             var qtd = parseInt(document.getElementById('cQtd').value);
@@ -17,40 +17,38 @@
             document.getElementById('cTot').value = tot;
         }
     </script>
-    
+
 </head>
 
-
 <body>
-
     <div id="interface">
-
-        <header id="cabecalho"> <!-- Tudo isso será o cabeçalho-->
-
-            <hgroup> <!--Diferença somente semantica-->
-
+        <header id="cabecalho">
+            <hgroup> 
                 <h1 id="tit1">Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
-
             </hgroup>
 
-            <img id="icone" src="_imagens/glass-oculos-preto-peq.png" title="google-glass"><!--Para chamar uma img, o seu parametro é o source, ou seja, origem!-->
-            
-            <nav id="menu"><!--MENU DE NAVEÇÃO-->
-
-                <h1>Menu Principal</h1> <!--Ordered lists e Unordered lists-->
-                <ul> <!-- Caso uma OL for  "i,I" numeros romanos; "a,A" ordem alfabética; start="x" 
-                    começa a lista de um determinaod local-->
-                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li> <!--List Item-->
-                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto('_imagens/video.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-                    
+            <img id="icone" src="_imagens/glass-oculos-preto-peq.png" title="google-glass">            
+            <nav id="menu">
+                <h1>Menu Principal</h1> 
+                <ul> 
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="index.html">Home</a>
+                    </li> 
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="specs.html">Especificações</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="fotos.html">Fotos</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/video.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="multimidia.html">Multimídia</a>
+                    </li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>            
                 </ul>
-
             </nav>
-
         </header>
 
         <section id="corpo-full">  
@@ -193,6 +191,7 @@
 <footer id="rodape">
     
     <p><a href=https://www.linkedin.com/in/lucas-vidal-gs/ target="_blank"> LinkedIn Lucas </a>| <a href=https://www.linkedin.com/in/joão-paulo-freitas-22521a1b5/ target="_blank">LinkedIn João</a></span></p>
+    <p>Faculdade de Tecnologia de São Paulo - ILP-540</p>
 </footer>
 </div> 
 </body> 
